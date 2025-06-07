@@ -7,6 +7,7 @@
 	<meta name="author" content="Vincent Ni and Damian Saada"/>
 	<title>Task 1.1 HTML and CSS Demo Page</title>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 	<body>
 		<div class="navmenu">
@@ -17,22 +18,26 @@
 			</ul>
 		</div>
 
+<div class="button-container">
+<button id="AusBar">Australia Bar Chart</button>
+<button id="AusLine">Australia Line Chart</button> <br>
+<button id="USBar">America Bar Chart</button>
+<button id="USLine">America Line Chart</button><br>
+<button id="ItalyBar">Italy Bar Chart</button>
+<button id="ItalyLine">Italy Line Chart</button><br>
+<button id="JapanBar">Japan Bar Chart</button>
+<button id="JapanLine">Japan Line Chart</button><br>
+<button id="UKBar">UK Bar Chart</button>
+<button id="UKLine">UK Line Chart</button>
+</div>
 
-<button id="Bar">Bar Chart</button>
-<button id="Line">Line Chart</button>
 
 
 <p id="chart"></p> 
+<button id="sort">Sort Bar By Measurement</button>
+<button id="sortyear">Sort Bar By Year</button>
 
 <script src="script1.js"></script>
-
-<style>
-.line {
-  fill: none;
-  stroke: slategrey;
-  stroke-width: 1.5;
-}
-</style>
 
 
 		
