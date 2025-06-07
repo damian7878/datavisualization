@@ -1,17 +1,28 @@
-.navmenu
-ul {
+/* Reset default styles and center all page text */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Navigation Menu */
+.navmenu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
-li {
+.navmenu li {
+  margin: 0 15px;
   float: left;
 }
 
-li a {
+.navmenu li a {
   display: block;
   color: white;
   text-align: center;
@@ -19,21 +30,24 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.navmenu li a:hover {
   background-color: #111;
 }
 
+/* Underline the main heading */
 h1 {
   text-decoration: underline;
 }
 
+/* Style paragraph text and apply a red border */
 p {
-    color: #00008B;
-    border-width: 3px; 
-    border-style: solid; 
-    border-color: #FF0000;
+  color: #00008B;
+  border-width: 3px; 
+  border-style: solid; 
+  border-color: #FF0000;
 }
 
+/* Fix the footer at the bottom with full width */
 footer {
   position: fixed;
   left: 0;
@@ -42,8 +56,20 @@ footer {
   color: white;
   text-align: center;
   background-color: black;
+  margin-top: 50px;
 }
 
+/* Button Styling */
+button {
+  margin: 2px;
+  padding: 10px 15px;
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Table Styling */
 .alcoholtable {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -55,9 +81,13 @@ footer {
   padding: 8px;
 }
 
-.alcoholtable tr:nth-child(even){background-color: #f2f2f2;}
+.alcoholtable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.alcoholtable tr:hover {background-color: #ddd;}
+.alcoholtable tr:hover {
+  background-color: #ddd;
+}
 
 .alcoholtable th {
   padding-top: 12px;
